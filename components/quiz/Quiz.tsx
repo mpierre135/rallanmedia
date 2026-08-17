@@ -75,7 +75,7 @@ export default function Quiz() {
 
       <div className="mt-4 h-px w-full bg-ink-edge">
         <motion.div
-          className="h-px bg-sodium"
+          className="h-px bg-signal"
           animate={{ width: `${((onDetails ? total : step) / total) * 100}%` }}
           transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
         />
@@ -131,7 +131,7 @@ export default function Quiz() {
                 </div>
 
                 {status === "error" && (
-                  <p role="alert" className="mt-6 font-mono text-xs text-flare">
+                  <p role="alert" className="mt-6 font-mono text-xs text-alert">
                     {error}
                   </p>
                 )}
@@ -139,7 +139,7 @@ export default function Quiz() {
                 <button
                   type="submit"
                   disabled={status === "sending"}
-                  className="mt-8 rounded-full bg-sodium px-8 py-3.5 font-semibold text-ink transition hover:bg-flare disabled:opacity-60"
+                  className="mt-8 rounded-full bg-signal px-8 py-3.5 font-semibold text-ink transition hover:bg-signal-bright disabled:opacity-60"
                 >
                   {status === "sending" ? "Scoring…" : "Show my result"}
                 </button>
@@ -158,8 +158,8 @@ export default function Quiz() {
                         type="button"
                         onClick={() => choose(question.id, choice.value)}
                         aria-pressed={selected}
-                        className={`rounded-xl border px-6 py-4 text-left transition hover:border-sodium hover:bg-ink-raised ${
-                          selected ? "border-sodium bg-ink-raised" : "border-ink-edge"
+                        className={`rounded-xl border px-6 py-4 text-left transition hover:border-signal hover:bg-ink-raised ${
+                          selected ? "border-signal bg-ink-raised" : "border-ink-edge"
                         }`}
                       >
                         {choice.label}
@@ -195,7 +195,7 @@ function Field({
     <label className="block">
       <span className="type-eyebrow">
         {label}
-        {required && <span className="text-sodium"> *</span>}
+        {required && <span className="text-signal"> *</span>}
       </span>
       <input
         type={type}
@@ -203,7 +203,7 @@ function Field({
         required={required}
         autoComplete={autoComplete}
         onChange={(e) => onChange(e.target.value)}
-        className="mt-2 w-full rounded-lg border border-ink-edge bg-ink-raised px-4 py-3 text-bone outline-none transition focus:border-sodium"
+        className="mt-2 w-full rounded-lg border border-ink-edge bg-ink-raised px-4 py-3 text-bone outline-none transition focus:border-signal"
       />
     </label>
   );
@@ -222,7 +222,7 @@ function ResultPanel({ result, name }: { result: Result; name: string }) {
       <p className="type-eyebrow">Your result</p>
 
       <div className="mt-6 flex items-baseline gap-5">
-        <span className="type-display text-6xl text-sodium tabular-nums md:text-7xl">
+        <span className="type-display text-6xl text-signal tabular-nums md:text-7xl">
           {result.score}
         </span>
         <span className="type-meta">out of 100 — opportunity score</span>
@@ -236,7 +236,7 @@ function ResultPanel({ result, name }: { result: Result; name: string }) {
       {copy.cta === "calendar" ? (
         <div className="mt-10 overflow-hidden rounded-2xl border hairline">
           <iframe
-            src={`${CALENDLY_URL}?hide_gdpr_banner=1&background_color=161a2b&text_color=edeae3&primary_color=f6a623`}
+            src={`${CALENDLY_URL}?hide_gdpr_banner=1&background_color=101725&text_color=ecf1f7&primary_color=229dcf`}
             title="Book a discovery call"
             className="h-[700px] w-full"
           />
@@ -244,7 +244,7 @@ function ResultPanel({ result, name }: { result: Result; name: string }) {
       ) : copy.cta === "call" ? (
         <a
           href={CALENDLY_URL}
-          className="mt-10 inline-block rounded-full bg-sodium px-8 py-3.5 font-semibold text-ink transition hover:bg-flare"
+          className="mt-10 inline-block rounded-full bg-signal px-8 py-3.5 font-semibold text-ink transition hover:bg-signal-bright"
         >
           Book the call
         </a>

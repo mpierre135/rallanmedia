@@ -40,7 +40,7 @@ export default function BookACall() {
           <ul className="mt-10 space-y-4 border-t hairline pt-8">
             {PREP.map((item) => (
               <li key={item} className="flex gap-3 text-sm">
-                <span aria-hidden className="mt-2 h-px w-4 shrink-0 bg-sodium" />
+                <span aria-hidden className="mt-2 h-px w-4 shrink-0 bg-signal" />
                 <span className="text-bone/85">{item}</span>
               </li>
             ))}
@@ -48,7 +48,7 @@ export default function BookACall() {
 
           <p className="type-meta mt-10">
             Prefer email?{" "}
-            <a href="mailto:info@rallanmedia.com" className="text-sodium hover:text-flare">
+            <a href="mailto:info@rallanmedia.com" className="text-signal hover:text-signal-bright">
               info@rallanmedia.com
             </a>
           </p>
@@ -64,7 +64,7 @@ export default function BookACall() {
                 />
                 <div
                   className="calendly-inline-widget"
-                  data-url={`${CALENDLY_URL}?hide_gdpr_banner=1&background_color=161a2b&text_color=edeae3&primary_color=f6a623`}
+                  data-url={`${CALENDLY_URL}?hide_gdpr_banner=1&background_color=101725&text_color=ecf1f7&primary_color=229dcf`}
                   style={{ minWidth: "320px", height: "700px" }}
                 />
               </>
@@ -81,7 +81,7 @@ export default function BookACall() {
               href={CALENDLY_URL}
               target="_blank"
               rel="noreferrer"
-              className="text-sodium hover:text-flare"
+              className="text-signal hover:text-signal-bright"
             >
               Open it in a new tab
             </a>

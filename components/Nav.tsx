@@ -48,7 +48,7 @@ export default function Nav() {
         <div className="flex items-center gap-3">
           <a
             href="#book"
-            className="hidden rounded-full bg-sodium px-5 py-2.5 text-sm font-semibold text-ink transition hover:bg-flare sm:inline-block"
+            className="hidden rounded-full bg-signal px-5 py-2.5 text-sm font-semibold text-ink transition hover:bg-signal-bright sm:inline-block"
           >
             Book a call
           </a>
@@ -94,7 +94,7 @@ export default function Nav() {
               <li>
                 <a
                   href="#book"
-                  className="mt-3 block rounded-full bg-sodium px-5 py-3 text-center font-semibold text-ink"
+                  className="mt-3 block rounded-full bg-signal px-5 py-3 text-center font-semibold text-ink"
                   onClick={() => setOpen(false)}
                 >
                   Book a call

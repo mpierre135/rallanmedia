@@ -35,7 +35,7 @@ export default function VideoReel() {
               <button
                 type="button"
                 onClick={() => setActive(ad)}
-                className="group block w-full overflow-hidden rounded-xl border hairline text-left transition duration-300 hover:-translate-y-1 hover:border-sodium/50"
+                className="group block w-full overflow-hidden rounded-xl border hairline text-left transition duration-300 hover:-translate-y-1 hover:border-signal/50"
               >
                 <div className="relative flex aspect-video items-center justify-center overflow-hidden bg-ink-raised">
                   {ad.poster && (
@@ -47,7 +47,7 @@ export default function VideoReel() {
                     />
                   )}
                   <span className="type-eyebrow absolute left-5 top-4">{ad.category}</span>
-                  <span className="relative flex h-14 w-14 items-center justify-center rounded-full bg-sodium text-ink transition group-hover:scale-110">
+                  <span className="relative flex h-14 w-14 items-center justify-center rounded-full bg-signal text-ink transition group-hover:scale-110">
                     <svg viewBox="0 0 24 24" className="ml-1 h-5 w-5" fill="currentColor" aria-hidden>
                       <path d="M8 5v14l11-7z" />
                     </svg>

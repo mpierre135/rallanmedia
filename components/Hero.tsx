@@ -6,16 +6,16 @@ import { CALENDLY_URL } from "@/lib/portfolio";
 
 const TRANSCRIPT = [
   { time: "19:42:07", line: "Incoming call — unknown number", tone: "muted" },
-  { time: "19:42:09", line: "AI voice answered", tone: "sodium" },
+  { time: "19:42:09", line: "AI voice answered", tone: "signal" },
   { time: "19:42:38", line: "Job captured — water heater, no hot water", tone: "bone" },
-  { time: "19:43:02", line: "Booked — tomorrow, 8:00 AM", tone: "sodium" },
+  { time: "19:43:02", line: "Booked — tomorrow, 8:00 AM", tone: "signal" },
   { time: "19:43:04", line: "Confirmation texted to customer", tone: "muted" },
 ] as const;
 
 const toneClass = {
   muted: "text-muted",
   bone: "text-bone",
-  sodium: "text-sodium",
+  signal: "text-signal",
 } as const;
 
 export default function Hero() {
@@ -42,7 +42,7 @@ export default function Hero() {
             <br />
             are the jobs
             <br />
-            <span className="text-sodium">you lose.</span>
+            <span className="text-signal">you lose.</span>
           </motion.h1>
 
           <motion.p
@@ -63,13 +63,13 @@ export default function Hero() {
           >
             <a
               href={CALENDLY_URL}
-              className="rounded-full bg-sodium px-7 py-3.5 font-semibold text-ink transition hover:bg-flare"
+              className="rounded-full bg-signal px-7 py-3.5 font-semibold text-ink transition hover:bg-signal-bright"
             >
               Book a call
             </a>
             <a
               href="#work"
-              className="rounded-full border border-muted/40 px-7 py-3.5 font-semibold transition hover:border-sodium hover:text-sodium"
+              className="rounded-full border border-muted/40 px-7 py-3.5 font-semibold transition hover:border-signal hover:text-signal"
             >
               See the work
             </a>
@@ -96,7 +96,7 @@ export default function Hero() {
             <div className="flex items-center justify-between">
               <span className="type-eyebrow">After-hours call</span>
               <span className="flex items-center gap-2 type-meta">
-                <span className="h-1.5 w-1.5 rounded-full bg-sodium" />
+                <span className="h-1.5 w-1.5 rounded-full bg-signal" />
                 Live
               </span>
             </div>

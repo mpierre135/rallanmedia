@@ -18,7 +18,7 @@ export default function Waveform() {
         // the whole hero column and push the layout wider than a phone.
         <motion.span
           key={i}
-          className="min-w-0 flex-1 rounded-full bg-sodium"
+          className="min-w-0 flex-1 rounded-full bg-signal"
           style={{ opacity: 0.35 + (height / 100) * 0.65 }}
           initial={{ height: `${height}%` }}
           animate={

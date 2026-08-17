@@ -57,7 +57,7 @@ export default function Services() {
                 <ul className="mt-8 space-y-3 border-t hairline pt-6">
                   {service.points.map((point) => (
                     <li key={point} className="flex gap-3 text-sm">
-                      <span aria-hidden className="mt-2 h-px w-4 shrink-0 bg-sodium" />
+                      <span aria-hidden className="mt-2 h-px w-4 shrink-0 bg-signal" />
                       <span className="text-bone/85">{point}</span>
                     </li>
                   ))}

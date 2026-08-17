@@ -1,13 +1,19 @@
 @import "tailwindcss";
 
+/* Palette sampled from the logo: the mark runs a gradient from #22 9D CF at the
+   top of the R to #3D 5A 8F at its base, set in a cool white on a near-black
+   plate. Those four values are the whole scheme. */
 @theme {
-  --color-ink: #0b0d17;
-  --color-ink-raised: #161a2b;
-  --color-ink-edge: #232941;
-  --color-bone: #edeae3;
-  --color-muted: #7c89a8;
-  --color-sodium: #f6a623;
-  --color-flare: #ff6b35;
+  --color-ink: #070a10;
+  --color-ink-raised: #101725;
+  --color-ink-edge: #1e2942;
+  --color-bone: #ecf1f7;
+  --color-muted: #7d8da8;
+  --color-signal: #229dcf;
+  --color-signal-bright: #55c4ec;
+  --color-depth: #3d5a8f;
+  /* Errors stay off-brand on purpose — a blue warning reads as decoration. */
+  --color-alert: #ff6b5a;
 
   --font-display: var(--font-archivo), ui-sans-serif, system-ui, sans-serif;
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
@@ -33,12 +39,12 @@
   }
 
   ::selection {
-    background-color: var(--color-sodium);
+    background-color: var(--color-signal);
     color: var(--color-ink);
   }
 
   :focus-visible {
-    outline: 2px solid var(--color-sodium);
+    outline: 2px solid var(--color-signal);
     outline-offset: 3px;
     border-radius: 2px;
   }

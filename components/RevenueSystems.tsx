@@ -73,7 +73,7 @@ export default function RevenueSystems() {
                     href={system.proof.url}
                     target="_blank"
                     rel="noreferrer"
-                    className="mt-6 inline-flex items-center gap-2 font-mono text-xs text-sodium transition hover:text-flare"
+                    className="mt-6 inline-flex items-center gap-2 font-mono text-xs text-signal transition hover:text-signal-bright"
                   >
                     See {system.proof.name}
                     <span aria-hidden>→</span>
@@ -91,7 +91,7 @@ export default function RevenueSystems() {
             </p>
             <a
               href="/qualify"
-              className="rounded-full border border-sodium px-6 py-3 font-semibold text-sodium transition hover:bg-sodium hover:text-ink"
+              className="rounded-full border border-signal px-6 py-3 font-semibold text-signal transition hover:bg-signal hover:text-ink"
             >
               Take the 2-minute assessment
             </a>

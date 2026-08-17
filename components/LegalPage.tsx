@@ -28,7 +28,7 @@ export default function LegalPage({ doc }: { doc: LegalDoc }) {
                   <ul className="mt-4 space-y-2">
                     {block.list.map((item) => (
                       <li key={item} className="flex gap-3 text-muted">
-                        <span aria-hidden className="mt-3 h-px w-3 shrink-0 bg-sodium" />
+                        <span aria-hidden className="mt-3 h-px w-3 shrink-0 bg-signal" />
                         <span>{item}</span>
                       </li>
                     ))}

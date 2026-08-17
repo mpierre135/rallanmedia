@@ -20,7 +20,7 @@ export default function WebPortfolio() {
                 href={site.url}
                 target="_blank"
                 rel="noreferrer"
-                className="group block h-full overflow-hidden rounded-xl border hairline transition duration-300 hover:-translate-y-1 hover:border-sodium/50"
+                className="group block h-full overflow-hidden rounded-xl border hairline transition duration-300 hover:-translate-y-1 hover:border-signal/50"
               >
                 <div className="relative aspect-[16/10] overflow-hidden bg-ink-raised">
                   <Image
@@ -38,7 +38,7 @@ export default function WebPortfolio() {
                     <span className="type-meta shrink-0">{site.trade}</span>
                   </div>
                   <p className="mt-3 text-sm text-muted">{site.built}</p>
-                  <span className="mt-5 inline-flex items-center gap-2 font-mono text-xs text-sodium">
+                  <span className="mt-5 inline-flex items-center gap-2 font-mono text-xs text-signal">
                     {site.url.replace(/^https:\/\//, "")}
                     <span aria-hidden className="transition group-hover:translate-x-1">→</span>
                   </span>

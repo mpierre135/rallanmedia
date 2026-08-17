@@ -30,7 +30,7 @@ export default function Footer() {
             </p>
             <a
               href="mailto:info@rallanmedia.com"
-              className="mt-4 inline-block font-mono text-xs text-sodium transition hover:text-flare"
+              className="mt-4 inline-block font-mono text-xs text-signal transition hover:text-signal-bright"
             >
               info@rallanmedia.com
             </a>

@@ -43,10 +43,18 @@ export default function SignalLine() {
         className="h-full w-full"
         fill="none"
       >
+        {/* Same top-to-bottom cyan→indigo ramp as the R in the logo mark. */}
+        <defs>
+          <linearGradient id="signal-rail" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="var(--color-signal-bright)" />
+            <stop offset="45%" stopColor="var(--color-signal)" />
+            <stop offset="100%" stopColor="var(--color-depth)" />
+          </linearGradient>
+        </defs>
         <path d={PATH} stroke="currentColor" strokeWidth={1} className="text-ink-edge" />
         <motion.path
           d={PATH}
-          stroke="var(--color-sodium)"
+          stroke="url(#signal-rail)"
           strokeWidth={1.5}
           strokeLinecap="round"
           style={reduced ? undefined : { pathLength: progress }}
@@ -61,7 +69,7 @@ export default function SignalLine() {
           className="absolute inset-0 h-full w-full"
           fill="none"
         >
-          <motion.circle cx={X} r={3} fill="var(--color-sodium)" style={{ cy: markerY }} />
+          <motion.circle cx={X} r={3} fill="var(--color-signal)" style={{ cy: markerY }} />
         </svg>
       )}
     </div>

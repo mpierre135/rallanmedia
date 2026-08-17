@@ -47,7 +47,7 @@ export default function Apps() {
                       href={app.url}
                       target="_blank"
                       rel="noreferrer"
-                      className="mt-6 inline-flex w-fit items-center gap-2 font-mono text-xs text-sodium transition hover:text-flare"
+                      className="mt-6 inline-flex w-fit items-center gap-2 font-mono text-xs text-signal transition hover:text-signal-bright"
                     >
                       Open {app.name}
                       <span aria-hidden>→</span>
