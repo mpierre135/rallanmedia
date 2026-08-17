@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Script from "next/script";
 import SectionHead from "./SectionHead";
-import { CALENDLY_URL } from "@/lib/portfolio";
+import CalEmbed from "./CalEmbed";
+import { CAL_BOOKING_URL } from "@/lib/portfolio";
 
 const PREP = [
   "What you do and where you do it",
@@ -15,7 +15,7 @@ export default function BookACall() {
   const ref = useRef<HTMLDivElement>(null);
   const [inView, setInView] = useState(false);
 
-  // Calendly's script is heavy; it should not load until the section is close.
+  // The booker bundle is heavy; hold it until the section is nearly in view.
   useEffect(() => {
     const node = ref.current;
     if (!node) return;
@@ -57,17 +57,9 @@ export default function BookACall() {
         <div className="lg:col-span-7">
           <div ref={ref} className="overflow-hidden rounded-2xl border hairline bg-ink-raised">
             {inView ? (
-              <>
-                <Script
-                  src="https://assets.calendly.com/assets/external/widget.js"
-                  strategy="lazyOnload"
-                />
-                <div
-                  className="calendly-inline-widget"
-                  data-url={`${CALENDLY_URL}?hide_gdpr_banner=1&background_color=101725&text_color=ecf1f7&primary_color=229dcf`}
-                  style={{ minWidth: "320px", height: "700px" }}
-                />
-              </>
+              <div className="h-[700px] min-w-[320px]">
+                <CalEmbed />
+              </div>
             ) : (
               <div className="flex h-[700px] items-center justify-center">
                 <span className="type-eyebrow">Loading calendar</span>
@@ -78,7 +70,7 @@ export default function BookACall() {
           <p className="type-meta mt-4">
             Calendar not loading?{" "}
             <a
-              href={CALENDLY_URL}
+              href={CAL_BOOKING_URL}
               target="_blank"
               rel="noreferrer"
               className="text-signal hover:text-signal-bright"

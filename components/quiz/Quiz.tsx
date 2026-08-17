@@ -3,7 +3,8 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { QUESTIONS, TIER_COPY, type Tier } from "@/lib/quiz";
-import { CALENDLY_URL } from "@/lib/portfolio";
+import CalEmbed from "@/components/CalEmbed";
+import { CAL_BOOKING_URL } from "@/lib/portfolio";
 
 type Result = { score: number; tier: Tier };
 
@@ -234,16 +235,12 @@ function ResultPanel({ result, name }: { result: Result; name: string }) {
       <p className="mt-5 max-w-2xl text-lg text-muted">{copy.body}</p>
 
       {copy.cta === "calendar" ? (
-        <div className="mt-10 overflow-hidden rounded-2xl border hairline">
-          <iframe
-            src={`${CALENDLY_URL}?hide_gdpr_banner=1&background_color=101725&text_color=ecf1f7&primary_color=229dcf`}
-            title="Book a discovery call"
-            className="h-[700px] w-full"
-          />
+        <div className="mt-10 h-[700px] overflow-hidden rounded-2xl border hairline">
+          <CalEmbed />
         </div>
       ) : copy.cta === "call" ? (
         <a
-          href={CALENDLY_URL}
+          href={CAL_BOOKING_URL}
           className="mt-10 inline-block rounded-full bg-signal px-8 py-3.5 font-semibold text-ink transition hover:bg-signal-bright"
         >
           Book the call

@@ -2,7 +2,7 @@
 
 import { motion } from "motion/react";
 import Waveform from "./Waveform";
-import { CALENDLY_URL } from "@/lib/portfolio";
+import { CAL_BOOKING_URL } from "@/lib/portfolio";
 
 const TRANSCRIPT = [
   { time: "19:42:07", line: "Incoming call — unknown number", tone: "muted" },
@@ -62,7 +62,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.3 }}
           >
             <a
-              href={CALENDLY_URL}
+              href={CAL_BOOKING_URL}
               className="rounded-full bg-signal px-7 py-3.5 font-semibold text-ink transition hover:bg-signal-bright"
             >
               Book a call

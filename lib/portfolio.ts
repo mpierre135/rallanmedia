@@ -191,4 +191,11 @@ export const CAPTURE_TARGETS: { slug: string; url: string }[] = [
   { slug: "launchforgeiq", url: "https://launchforgeiq.com" },
 ];
 
-export const CALENDLY_URL = "https://calendly.com/mp1350/discovery-call";
+/** Cal.com booking.
+ *  CAL_LINK is the embed target — "<username-or-team>/<event-slug>", no domain.
+ *  Update the username here once the Cal.com account is claimed; everything
+ *  else on the site derives from these two values. */
+export const CAL_LINK = "rallanmedia/discovery-call";
+export const CAL_BOOKING_URL = `https://cal.com/${CAL_LINK}`;
+/** Isolates this embed's config from any other Cal instance on the page. */
+export const CAL_NAMESPACE = "discovery-call";
