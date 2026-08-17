@@ -1,0 +1,10 @@
+# Snapshot of the pre-redesign static site — kept for reference, not deployed.
+legacy/
+
+# Superseded by the app routes; redirects in next.config.mjs cover the old URLs.
+index.html
+privacy-policy.html
+terms-of-service.html
+data-deletion-policy.html
+
+.remember/

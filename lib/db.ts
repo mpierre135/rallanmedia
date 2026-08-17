@@ -1,0 +1,14 @@
+import { neon } from "@neondatabase/serverless";
+
+let cached: ReturnType<typeof neon> | null = null;
+
+/** Throws at call time rather than import time so the page still renders
+ *  locally before DATABASE_URL is configured. */
+export function sql() {
+  if (!cached) {
+    const url = process.env.DATABASE_URL;
+    if (!url) throw new Error("DATABASE_URL is not set");
+    cached = neon(url);
+  }
+  return cached;
+}

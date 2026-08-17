@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ========== BASIC META ========== -->
+    <meta charset="utf-8">
+    <title>R. Allan Media | Where Photography, AI & Innovation Meet</title>
+    <meta name="description" content="R. Allan Media empowers creators & brands with AI-driven content, video, apps & photography. Book a call today.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index,follow">
+    <meta name="theme-color" content="#0077FF">
+
+    <!-- ========== OPEN-GRAPH / TWITTER ========== -->
+    <meta property="og:title" content="R. Allan Media | Where Photography, AI & Innovation Meet">
+    <meta property="og:description" content="AI-powered media, video, apps & photography for modern brands.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://rallanmedia.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- ========== FONTS ========== -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <!-- ========== INLINE CSS ========== -->
+    <style>
+        :root{
+            --black:#000000;
+            --white:#FFFFFF;
+            --blue:#0077FF;
+            --gray:#f5f7fa;
+            --transition:.3s ease;
+        }
+        *{box-sizing:border-box;margin:0;padding:0;font-family:'Inter',sans-serif;}
+        body{background:var(--white);color:var(--black);line-height:1.6;}
+        h1,h2,h3{line-height:1.2;font-weight:800;}
+        img{max-width:100%;display:block;}
+        a{text-decoration:none;color:inherit;}
+        ul{list-style:none;}
+        section{padding:80px 20px;}
+        .container{max-width:1100px;margin:auto;}
+        .btn{background:var(--blue);color:var(--white);padding:14px 28px;border-radius:30px;font-weight:600;display:inline-block;transition:var(--transition);}
+        .btn:hover{filter:brightness(1.15);}
+        .btn-outline{background:transparent;border:2px solid var(--blue);color:var(--blue);}
+        .btn-outline:hover{background:var(--blue);color:var(--white);}
+        .center{text-align:center;}
+        .grid{display:grid;gap:30px;}
+        .cols-2{grid-template-columns:1fr;}
+        @media(min-width:768px){.cols-2{grid-template-columns:1fr 1fr;}}
+        .cols-3{grid-template-columns:1fr;}
+        @media(min-width:768px){.cols-3{grid-template-columns:repeat(3,1fr);}}
+        .card{background:var(--gray);padding:30px;border-radius:12px;}
+        /* --- NAV --- */
+        nav{position:sticky;top:0;background:var(--black);box-shadow:0 2px 6px rgba(0,0,0,.3);z-index:1000;color:var(--white);}
+        .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:15px 20px;}
+        .logo{font-size:22px;font-weight:800;color:var(--white);}
+        .nav-links{display:none;gap:25px;align-items:center;color:var(--white);}
+        .nav-links a{color:var(--white);}
+        @media(min-width:768px){.nav-links{display:flex;}}
+        .hamburger{width:26px;height:20px;display:flex;flex-direction:column;justify-content:space-between;cursor:pointer;}
+        .hamburger span{width:100%;height:3px;background:var(--white);}
+        /* --- HERO --- */
+        #hero{background:linear-gradient(135deg,var(--black) 0%, #111 100%);color:var(--white);}
+        #hero h1{font-size:2.8rem;margin-bottom:20px;}
+        #hero p{font-size:1.1rem;margin-bottom:35px;opacity:.9;}
+        .hero-btns{display:flex;gap:15px;flex-wrap:wrap;justify-content:center;}
+        /* --- FORMS --- */
+        input,textarea,select{width:100%;padding:14px;margin-bottom:15px;border:1px solid #ccc;border-radius:6px;font-size:16px;}
+        input:focus,textarea:focus{outline:none;border-color:var(--blue);}
+        /* --- FOOTER --- */
+        footer{background:var(--black);color:var(--white);padding:50px 20px;text-align:center;}
+        footer a{color:var(--blue);}
+        .socials{display:flex;gap:20px;justify-content:center;margin-top:15px;font-size:24px;}
+        .legal-links{display:flex;gap:20px;justify-content:center;margin-top:20px;flex-wrap:wrap;}
+        .legal-links a{color:var(--white);opacity:.8;font-size:14px;}
+        .legal-links a:hover{opacity:1;}
+        /* --- ANIMATIONS --- */
+        .fade-up{opacity:0;transform:translateY(30px);transition:var(--transition);}
+        .in-view{opacity:1;transform:none;}
+    </style>
+</head>
+<!-- ========== NEW BODY WITH AI MOCKUPS ========== -->
+<body>
+<!-- NAV (unchanged) -->
+<nav aria-label="Primary">
+    <div class="nav-inner container">
+        <div class="logo"><img src="public/R Allan Media Logo.png" alt="R. Allan Media" style="height:100px;"></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#tools">Tools</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact" class="btn">Book a Call</a></li>
+        </ul>
+        <div class="hamburger" aria-label="Open menu" aria-controls="nav-links" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+    <div class="container center">
+        <h1>Empowering Creators &amp; Businesses with AI-Driven Content, Video, Apps, and Photography</h1>
+        <p>From stunning visuals to automated content systems, we help brands innovate and grow.</p>
+        <div class="hero-btns">
+            <a href="#contact" class="btn">Book a Call</a>
+            <a href="#tools" class="btn btn-outline">Explore Our Tools</a>
+            <a href="#portfolio" class="btn btn-outline">View Portfolio</a>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="container">
+    <h2 class="center">About R. Allan Media</h2>
+    <p class="center">Founded by Rudy “MP” Allan Pierre, R. Allan Media blends business strategy, photography, and AI to build smarter, leaner, and more impactful content systems for brands and individuals. Our vision is to democratize high-end creative technology while maintaining human empathy and precision.</p>
+    <div class="grid cols-3 center" style="margin-top:50px;">
+        <div class="fade-up"><div style="font-size:48px;margin-bottom:15px;">💡</div><h3>Innovation</h3><p>We adopt bleeding-edge AI tools to keep you ahead of the curve.</p></div>
+        <div class="fade-up"><div style="font-size:48px;margin-bottom:15px;">❤️</div><h3>Empathy</h3><p>Your story matters. We listen first, create second.</p></div>
+        <div class="fade-up"><div style="font-size:48px;margin-bottom:15px;">🎯</div><h3>Precision</h3><p>Pixel-perfect execution, data-driven decisions.</p></div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" style="background:var(--gray);">
+    <div class="container">
+        <h2 class="center">Our Services</h2>
+        <div class="grid cols-2" style="margin-top:40px;">
+            <div class="card fade-up">
+                <img src="public/0dc589508b6bf2c15f847bf53f521db5_1762802926.png" alt="Professional photography sample">
+                <h3>Professional Photography</h3>
+                <p>Headshots, lifestyle, real-estate & corporate imagery that elevate perception.</p>
+            </div>
+            <div class="card fade-up">
+                <img src="https://picsum.photos/600/320?random=2" alt="AI video creation mockup">
+                <h3>AI Video Creation</h3>
+                <p>Storyboard-to-screen workflows using Sora, Kling & Veo for hyper-real reels.</p>
+            </div>
+            <div class="card fade-up">
+                <img src="https://picsum.photos/600/320?random=3" alt="App development dashboard">
+                <h3>App Development</h3>
+                <p>Custom SaaS & mobile apps for creators. Flagship: Allan360™.</p>
+            </div>
+            <div class="card fade-up">
+                <img src="public/Ideal-M Mockup 2.png" alt="Marketing ad intelligence">
+                <h3>Marketing & Ad Intelligence</h3>
+                <p>Deploy Ideal-M™ to uncover winning Facebook, TikTok & YouTube ads.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TOOLS -->
+<section id="tools" class="container">
+    <h2 class="center">Core Tools</h2>
+    <div class="grid cols-2" style="margin-top:40px;align-items:center;">
+        <div class="fade-up">
+            <h3>Allan360™</h3>
+            <p>All-in-one creator app: AI writing, social scheduling, client CRM & analytics in a sleek dashboard.</p>
+            <a href="#contact" class="btn">Join Beta</a>
+        </div>
+        <div class="fade-up">
+            <img src="public/Allan360 Mockup.jpg" alt="Allan360 dashboard preview">
+        </div>
+    </div>
+    <div class="grid cols-2" style="margin-top:60px;align-items:center;">
+        <div class="fade-up">
+            <img src="public/Ideal-M Mockup 1.jpg" alt="Ideal-M ad spy tool preview">
+        </div>
+        <div class="fade-up">
+            <h3>Ideal-M™</h3>
+            <p>The ultimate ad spy tool—filter by niche, creative, platform & funnel to unlock competitor secrets.</p>
+            <a href="#contact" class="btn">View Demo</a>
+        </div>
+    </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" style="background:var(--gray);">
+    <div class="container">
+        <h2 class="center">Portfolio</h2>
+        <div class="grid cols-3" style="margin-top:40px;">
+            <a href="https://picsum.photos/800/600?random=7" data-lightbox="portfolio" class="fade-up">
+                <img src="https://picsum.photos/600/400?random=7" alt="Photography project">
+            </a>
+            <a href="https://picsum.photos/800/600?random=8" data-lightbox="portfolio" class="fade-up">
+                <img src="https://picsum.photos/600/400?random=8" alt="Video creation reel">
+            </a>
+            <a href="https://picsum.photos/800/600?random=9" data-lightbox="portfolio" class="fade-up">
+                <img src="https://picsum.photos/600/400?random=9" alt="App UI mockup">
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="container">
+    <h2 class="center">What Clients Say</h2>
+    <div class="grid cols-3" style="margin-top:40px;font-style:italic;">
+        <div class="card fade-up">
+            <img src="https://picsum.photos/60/60?random=10" alt="Client avatar" style="border-radius:50%;margin-bottom:15px;">
+            <p>“R. Allan Media increased our content output 5× while slashing costs. The AI videos feel cinematic.”</p>
+            <div>★★★★★<br><strong>— Maya K., SaaS Founder</strong></div>
+        </div>
+        <div class="card fade-up">
+            <img src="https://picsum.photos/60/60?random=11" alt="Client avatar" style="border-radius:50%;margin-bottom:15px;">
+            <p>“Ideal-M uncovered angles we never considered—our ROAS jumped 42 % in two weeks.”</p>
+            <div>★★★★★<br><strong>— Luis R., E-com Owner</strong></div>
+        </div>
+        <div class="card fade-up">
+            <img src="https://picsum.photos/60/60?random=12" alt="Client avatar" style="border-radius:50%;margin-bottom:15px;">
+            <p>“Headshots done in-studio were crisp, professional, and delivered same-day. Highly recommend.”</p>
+            <div>★★★★★<br><strong>— Dana P., Real-Estate Broker</strong></div>
+        </div>
+    </div>
+</section>
+
+<!-- BLOG -->
+<section id="blog" style="background:var(--gray);">
+    <div class="container">
+        <h2 class="center">Latest Insights</h2>
+        <div class="grid cols-2" style="margin-top:40px;">
+            <article class="card fade-up">
+                <img src="https://picsum.photos/600/320?random=13" alt="AI revolution blog header">
+                <h3>How AI is Revolutionizing Media Agencies in 2025</h3>
+                <p>From generative video to predictive analytics, explore the tools reshaping creative workflows.</p>
+                <a href="#">Read More →</a>
+            </article>
+            <article class="card fade-up">
+                <img src="https://picsum.photos/600/320?random=14" alt="AI avatar blog header">
+                <h3>Behind the Scenes: From Headshot to AI Avatar</h3>
+                <p>A step-by-step look at converting professional photos into dynamic 3D avatars for branding.</p>
+                <a href="#">Read More →</a>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="container center">
+    <h2>Join Our AI Insights Newsletter</h2>
+    <p>Get bi-weekly tips, tool drops, and case studies.</p>
+    <form action="https://rallanmedia.us21.list-manage.com/subscribe/post?u=YOUR_ID&amp;id=YOUR_LIST_ID" method="post" target="_blank" style="max-width:500px;margin:30px auto;">
+        <input type="email" name="EMAIL" placeholder="Your email" required>
+        <button type="submit" class="btn" style="width:100%;">Subscribe</button>
+    </form>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="background:var(--gray);">
+    <div class="container" style="max-width:700px;">
+        <h2 class="center">Let’s Build Together</h2>
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+            <input type="text" name="Name" placeholder="Name" required>
+            <input type="email" name="Email" placeholder="Email" required>
+            <input type="text" name="Business" placeholder="Business Name">
+            <select name="Service">
+                <option value="">Service Interested In</option>
+                <option>Photography</option>
+                <option>AI Video Creation</option>
+                <option>App Development</option>
+                <option>Ad Intelligence</option>
+            </select>
+            <textarea name="Message" rows="5" placeholder="Tell us about your project" required></textarea>
+            <button type="submit" class="btn" style="width:100%;">Send Message</button>
+        </form>
+        <p class="center" style="margin-top:30px;">Or email us directly: <a href="mailto:info@rallanmedia.com">info@rallanmedia.com</a></p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="logo"><img src="public/R Allan Media Logo.png" alt="R. Allan Media" style="height:50px;"></div>
+        <p>Where Photography, AI, and Innovation Meet.</p>
+        <div class="socials">
+            <a href="https://instagram.com/rallanmedia" aria-label="Instagram">📷</a>
+            <a href="https://twitter.com/rallanmedia" aria-label="Twitter">🐦</a>
+            <a href="https://linkedin.com/company/rallanmedia" aria-label="LinkedIn">💼</a>
+        </div>
+        <div class="legal-links">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-of-service.html">Terms of Service</a>
+            <a href="data-deletion-policy.html">Data Deletion Policy</a>
+        </div>
+        <p style="margin-top:25px;font-size:14px;opacity:.7;">© <span id="year"></span> R. Allan Media. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- SCRIPTS (unchanged) -->
+<script>
+    const hamburger=document.querySelector('.hamburger'),navLinks=document.querySelector('.nav-links');
+    hamburger.addEventListener('click',()=>{
+        navLinks.style.display=navLinks.style.display==='flex'?'none':'flex';
+        navLinks.style.position='absolute';navLinks.style.top='60px';navLinks.style.right='20px';
+        navLinks.style.flexDirection='column';navLinks.style.background='var(--black)';
+        navLinks.style.padding='20px';navLinks.style.boxShadow='0 4px 12px rgba(0,0,0,.3)';
+    });
+    const observer=new IntersectionObserver(entries=>entries.forEach(e=>e.isIntersecting&&e.target.classList.add('in-view')),{threshold:.2});
+    document.querySelectorAll('.fade-up').forEach(el=>observer.observe(el));
+    document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+
+</html>
