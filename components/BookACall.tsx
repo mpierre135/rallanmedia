@@ -57,7 +57,7 @@ export default function BookACall() {
         <div className="lg:col-span-7">
           <div ref={ref} className="overflow-hidden rounded-2xl border hairline bg-ink-raised">
             {inView ? (
-              <div className="h-[700px] min-w-[320px]">
+              <div className="min-w-[320px]">
                 <CalEmbed />
               </div>
             ) : (

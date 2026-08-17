@@ -235,7 +235,7 @@ function ResultPanel({ result, name }: { result: Result; name: string }) {
       <p className="mt-5 max-w-2xl text-lg text-muted">{copy.body}</p>
 
       {copy.cta === "calendar" ? (
-        <div className="mt-10 h-[700px] overflow-hidden rounded-2xl border hairline">
+        <div className="mt-10 overflow-hidden rounded-2xl border hairline">
           <CalEmbed />
         </div>
       ) : copy.cta === "call" ? (

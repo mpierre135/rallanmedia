@@ -54,9 +54,14 @@ export default function CalEmbed({ className }: { className?: string }) {
     <Cal
       namespace={CAL_NAMESPACE}
       calLink={CAL_LINK}
-      config={{ layout: "month_view" }}
+      /* theme goes on config as well as the ui() call — config lands in the
+         iframe URL, so the booker paints dark on first render instead of
+         flashing light while the ui message is still in flight. */
+      config={{ layout: "month_view", theme: "dark" }}
       className={className}
-      style={{ width: "100%", height: "100%", overflow: "auto" }}
+      /* No fixed height: Cal resizes the iframe to its own content, and
+         constraining it clips the calendar mid-month. */
+      style={{ width: "100%" }}
     />
   );
 }
