@@ -28,7 +28,9 @@ export default function QualifyPage() {
       </header>
 
       <main className="shell grow py-16 md:py-24">
-        <div className="mx-auto max-w-2xl">
+        {/* Wide enough for the booker on the result screen; the questions
+            constrain themselves to a comfortable reading width inside this. */}
+        <div className="mx-auto max-w-5xl">
           <Quiz />
         </div>
       </main>

@@ -62,7 +62,7 @@ export default function Quiz() {
   const question = QUESTIONS[step];
 
   return (
-    <div>
+    <div className="mx-auto max-w-2xl">
       <div className="flex items-center justify-between">
         <span className="type-eyebrow tabular-nums">
           {String(Math.min(step + 1, total)).padStart(2, "0")} / {String(total).padStart(2, "0")}
